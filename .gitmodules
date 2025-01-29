@@ -1,0 +1,6 @@
+[submodule "lua/git-commit-tool"]
+	path = lua/git-commit-tool
+	url = https://github.com/francivaldo4334/git-commit-tool.nvim.git
+[submodule "lua/git-merge-tool"]
+	path = lua/git-merge-tool
+	url = https://github.com/francivaldo4334/git-merge-tool.nvim.git
