@@ -22,8 +22,10 @@ local git_commit_tool_opts = {
 	usekeymaps = true,
 }
 function M.setup(opts)
-	git_commit_tool.setup(opts.git_commit_tool or git_commit_tool_opts)
-	git_merge_tool.setup(opts.git_merge_tool or git_merge_tool_opts)
+	local commit_tool = opts.git_commit_tool or git_commit_tool_opts
+	local merge_tool = opts.git_merge_tool or git_merge_tool_opts
+	git_commit_tool.setup(commit_tool)
+	git_merge_tool.setup(merge_tool)
 end
 
 return M
